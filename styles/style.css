@@ -11,6 +11,12 @@
   font-weight: 800;
   margin-bottom: 24px;
 }
+.heading-secondary {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
 .para-primary {
   color: #5a5a5d;
   font-size: 16px;
@@ -216,6 +222,46 @@ header nav ul li {
   grid-column: span 7;
 }
 
+/* choosing section */
+
+.choose {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+.choose-text {
+  text-align: center;
+}
+.choose-content {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+.choose-card {
+  padding: 32px 55px 32px 32px;
+}
+.card1 {
+  grid-column: span 4;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.card2 {
+  grid-column: span 4;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card3 {
+  grid-column: 3 / span 4;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.choose-card img {
+  width: 30%;
+}
 @media screen and (max-width: 560px) {
   .heading-primary {
     font-size: 1.7rem;
@@ -276,15 +322,34 @@ header nav ul li {
 
   /* destination section */
 
+  .choose, /* common */
   .destination {
     margin-top: 30px;
+    width: 90%;
   }
+
   .destination-img {
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: 70%;
+  }
+  .images {
+    grid-column: span 12;
   }
   .destination-img .images img {
     object-fit: cover;
     height: 200px;
     border-radius: 10px;
+  }
+
+  /* choosing section */
+
+  .choose {
+    width: 90%;
+  }
+  .choose-content {
+    grid-template-columns: 90%;
+  }
+  .card3 {
+    grid-column: span 4;
   }
 }
