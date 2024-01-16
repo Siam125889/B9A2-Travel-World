@@ -378,10 +378,78 @@ header nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
 }
+
+/* newsletter section */
+
+.newsletter {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.newsletter-content {
+  flex-basis: 40%;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+.newsletter-content p {
+  margin-bottom: 24px;
+}
+.newsletter-content input[type="text"],
+.newsletter-content input[type="email"] {
+  width: 90%;
+  padding: 16px;
+  margin: 8px auto;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border-radius: 8px;
+  border: none;
+}
+.newsletter-content input[type="submit"] {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+.newsletter-img {
+  flex-basis: 55%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.save {
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 47px;
+  right: 6px;
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  transform: rotate(-19.628deg);
+}
+.save p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.save h3 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+}
+.newsletter-img img {
+  width: 100%;
+}
+
 @media screen and (max-width: 560px) {
   .heading-primary {
     font-size: 1.7rem;
@@ -471,6 +539,7 @@ header nav ul li {
     width: 90%;
   }
   .choose-content {
+    margin-top: 22px;
     grid-template-columns: 90%;
   }
   .card3 {
@@ -520,5 +589,24 @@ header nav ul li {
   .simple-content {
     flex-direction: column;
     gap: 20px;
+  }
+  .vdo p {
+    font-size: 1.2rem;
+  }
+
+  /* newsletter section */
+  .newsletter {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .newsletter-container {
+    flex-direction: column;
+  }
+  .save p {
+    font-size: 1rem;
+  }
+  .save h3 {
+    font-size: 1.5rem;
   }
 }
