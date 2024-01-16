@@ -337,6 +337,51 @@ header nav ul li {
   text-align: center;
 }
 
+/* simple section */
+
+.simple {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+.simple-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.simple-text ul {
+  padding: 20px;
+}
+.simple-text ul li {
+  color: #131318;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.simple-text {
+  flex-basis: 45%;
+}
+.vdo {
+  flex-basis: 45%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.vdo video {
+  width: 100%;
+  border-radius: 16px;
+}
+.vdo p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
 @media screen and (max-width: 560px) {
   .heading-primary {
     font-size: 1.7rem;
@@ -464,5 +509,16 @@ header nav ul li {
   .deals-banner-content > button {
     font-size: 18px;
     padding: 10px 20px;
+  }
+
+  /* simple section */
+
+  .simple {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .simple-content {
+    flex-direction: column;
+    gap: 20px;
   }
 }
