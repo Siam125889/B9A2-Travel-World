@@ -691,6 +691,7 @@ footer .icons {
   }
   .row {
     flex-direction: column;
+    margin-top: 20px;
   }
 
   /* footer */
