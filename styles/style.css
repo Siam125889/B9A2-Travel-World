@@ -653,6 +653,7 @@ footer hr {
   /* footer */
   footer {
     height: 400px;
+    margin-top: 30px;
   }
   footer .logo {
     font-size: 22px;
