@@ -115,11 +115,12 @@ header nav ul li {
   margin: auto;
 }
 .input-field {
-  margin-top: 50px;
-  display: inline-flex;
+  display: flex;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
-  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
 }
 .input-field input {
   color: rgba(19, 19, 24, 0.5);
@@ -130,8 +131,10 @@ header nav ul li {
   border: none;
   outline: none;
   border-radius: 8px;
+  width: 20%;
 }
-.input-field input[type="search"] {
+
+.input-field input[type="submit"] {
   text-align: center;
 }
 
@@ -555,7 +558,7 @@ footer .icons {
   /* banner */
 
   .banner {
-    height: 85vh;
+    height: 70vh;
     margin-top: 20px;
   }
   .banner-content h1 {
@@ -570,11 +573,12 @@ footer .icons {
     margin-bottom: 32px;
   }
   .input-field {
-    width: 85%;
+    width: 80%;
+    flex-direction: column;
   }
   .input-field input {
-    width: 90%;
-    margin: 8px;
+    width: 80%;
+    margin: 8px auto;
   }
 
   /* popular section */
